@@ -1,8 +1,9 @@
 import os
 from flask import Flask
+import datetime from datetime
 
 app = Flask(__name__)
 
 @app.route('/')
-def hello():
-    return 'Hello World!'
+def map():
+  return render_template('map.html', now=datetime.now)
