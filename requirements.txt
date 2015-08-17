@@ -1,7 +1,6 @@
 altgraph==0.10.1
 bdist-mpkg==0.4.4
 beautifulsoup4==4.4.0
-bonjour-py==0.3
 conda===unknown
 geopy==1.10.0
 macholib==1.5
