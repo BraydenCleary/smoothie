@@ -5,5 +5,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def map():
-  # "The time is " + str(datetime.now())
-  render_template('map.html', name='Brayden')
+  render_template('map.html')
