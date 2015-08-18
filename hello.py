@@ -6,4 +6,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def map():
-  render_template('map.html')
+  return render_template('map.html', name='Brayden')
