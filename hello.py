@@ -57,7 +57,7 @@ def map():
       DayOfWeek_Saturday  = datetime.isoweekday() == 6
       DayOfWeek_Sunday    = datetime.isoweekday() == 7
       is_weekend          = datetime.isoweekday() in [6,7]
-      zip_predictions.append({zip: model.predict([day_of_month, time_of_day_bucket, month_of_year, year, DayOfWeek_Friday, DayOfWeek_Wednesday, DayOfWeek_Tuesday, DayOfWeek_Thursday, DayOfWeek_Monday, DayOfWeek_Saturday, DayOfWeek_Sunday, is_weekend, zip])[0]})
+      zip_predictions.append({zip: zip, result: model.predict([day_of_month, time_of_day_bucket, month_of_year, year, DayOfWeek_Friday, DayOfWeek_Wednesday, DayOfWeek_Tuesday, DayOfWeek_Thursday, DayOfWeek_Monday, DayOfWeek_Saturday, DayOfWeek_Sunday, is_weekend, zip])[0]})
     return zip_predictions
 
   data = parse_for_map(datetime.now())
