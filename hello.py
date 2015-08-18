@@ -63,4 +63,4 @@ def map():
   # data = parse_for_map(datetime.now())
   # do model stuff with current time and pass through model's results
   print('yo')
-  return render_template('map.html', data={}})
+  return render_template('map.html', data={})
